@@ -1,20 +1,21 @@
 import { Component,Input, OnInit } from '@angular/core';
 import { FaceSnap } from '../models/face-snap.models';
 import { CommonModule } from '@angular/common';
+import { FaceSnapComponent } from '../face-snap/face-snap.component';
 //import { FaceSnapComponent } from './face-snap/face-snap.component';
 
 
 @Component({
   selector: 'app-face-snap-list',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule,FaceSnapComponent],
   templateUrl: './face-snap-list.component.html',
   styleUrl: './face-snap-list.component.scss'
 })
 export class FaceSnapListComponent implements OnInit{
-  @Input() faceSnaps! : FaceSnap[];
+  faceSnaps! : FaceSnap[];
 
-  ngOnInit(): void {
+  ngOnInit(){
     this.faceSnaps = [
       {
         title : 'Archibald',

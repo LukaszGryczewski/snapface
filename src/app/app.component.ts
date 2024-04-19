@@ -3,11 +3,12 @@ import { RouterOutlet } from '@angular/router';
 import { FaceSnapComponent } from './face-snap/face-snap.component';
 import { FaceSnap } from './models/face-snap.models';
 import { CommonModule } from '@angular/common';
+import { FaceSnapListComponent } from './face-snap-list/face-snap-list.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,FaceSnapComponent,CommonModule],
+  imports: [RouterOutlet,FaceSnapComponent,CommonModule,FaceSnapListComponent ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
