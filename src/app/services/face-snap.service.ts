@@ -1,5 +1,5 @@
+import { FaceSnap } from './../models/face-snap.models';
 import { Injectable } from "@angular/core";
-import { FaceSnap } from "../models/face-snap.models";
 
 @Injectable({
   providedIn : 'root'
@@ -14,6 +14,7 @@ export class FaceSnapService {
       createdDate: new Date(),
       location : "Anvers",
       snaps : 50
+
     },
     {
       title: 'Three Rock Mountain',
@@ -30,5 +31,9 @@ export class FaceSnapService {
       snaps: 5
     }
   ];
+
+  getAllFaceSnap() : FaceSnap[] {
+    return this.faceSnaps;
+  }
 
 }
