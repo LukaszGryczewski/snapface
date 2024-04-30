@@ -5,6 +5,7 @@ import { FaceSnap } from './models/face-snap.models';
 import { CommonModule } from '@angular/common';
 import { FaceSnapListComponent } from './face-snap-list/face-snap-list.component';
 import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 @Component({
   selector: 'app-root',
@@ -13,7 +14,8 @@ import { HeaderComponent } from './header/header.component';
             FaceSnapComponent,
             CommonModule,
             FaceSnapListComponent,
-            HeaderComponent
+            HeaderComponent,
+            FooterComponent
           ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'

@@ -1,0 +1,39 @@
+/* Style du footer */
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f8f9fa;
+  padding: 10px;
+  text-align: center;
+  border-top: 1px solid #dee2e6;
+}
+
+/* Style des liens dans le footer */
+footer a {
+  color: #007bff; /* Couleur des liens */
+  text-decoration: none; /* Supprime la soulignement */
+  margin: 0 10px; /* Espacement entre les liens */
+}
+
+footer a:hover {
+  text-decoration: underline; /* Soulignement lors du survol */
+}
+
+/* Style des paragraphes dans le footer */
+footer p {
+  margin: 0; /* Supprime l'espacement par défaut des paragraphes */
+  font-size: 14px; /* Taille de police des paragraphes */
+  color: #6c757d; /* Couleur de texte des paragraphes */
+}
+
+/* Style de la navigation dans le footer */
+footer nav ul {
+  list-style: none; /* Supprime les puces de liste */
+  padding: 0; /* Supprime l'espacement intérieur */
+}
+
+footer nav ul li {
+  display: inline; /* Affiche les éléments de liste en ligne */
+}
