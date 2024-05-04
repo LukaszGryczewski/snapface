@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterLinkActive, RouterModule, RouterOutlet } from '@angular/router';
 import { FaceSnapComponent } from './face-snap/face-snap.component';
 import { FaceSnap } from './models/face-snap.models';
 import { CommonModule } from '@angular/common';
@@ -15,7 +15,10 @@ import { FooterComponent } from './footer/footer.component';
             CommonModule,
             FaceSnapListComponent,
             HeaderComponent,
-            FooterComponent
+            FooterComponent,
+            RouterLink,
+            RouterLinkActive,
+            RouterModule
           ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
