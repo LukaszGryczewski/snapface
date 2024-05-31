@@ -1,5 +1,5 @@
 
-<div class="face-snap-card" [ngClass]="{ snapped : buttonText === 'Oops, un Snap!'}">
+<div class ="face-snap-card" [ngClass]="{ snapped : buttonText === 'Oops, un Snap!'}">
   <h2>{{ faceSnap.title | titlecase }}</h2>
   <a [routerLink]="['/facesnaps']" routerLinkActive="router-link-active" >Back</a>
   <p>Mise à jour le {{ faceSnap.createdDate | date:'full'}}</p>

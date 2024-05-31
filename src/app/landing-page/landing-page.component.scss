@@ -1,8 +1,13 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Utilisez toute la hauteur de la vue */
+  justify-content: center; /* Centre verticalement */
+  align-items: center; /* Centre horizontalement */
+  margin-bottom: 20px;
+}
 .landing-block {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .landing-links {
